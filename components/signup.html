@@ -14,8 +14,8 @@
     <nav class="nav-bar">
         <img src="../Assets/logo.svg" class="logo">
         <div class="nav-items">
-            <img src="../Assets/menu.svg" class="menu">
-            <div class="dropdown">
+            <img src="../Assets/menu.svg" class="menu" id="menu">
+            <div class="dropdown" id="drop">
                 <a href="../index.html">Home</a>
                 <a href="countdown.html">Countdown</a>
                 <a href="shop-page.html">Products</a>
@@ -47,5 +47,22 @@
             <a href="login.html">LOGIN</a>
         </div>
     </main>
+    <script>
+        // MOBILE NAV SETUP
+        let menu, drop, ham, closes;
+        menu = document.querySelector('#menu');
+        drop = document.querySelector('#drop');
+        ham = '../Assets/menu.svg';
+        closes = '../Assets/close.svg';
+        menu.onclick = function() {
+            if (menu.src.match(ham)) {
+                menu.src = closes;
+                drop.style.display = 'flex';
+            } else {
+                menu.src = ham;
+                drop.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>

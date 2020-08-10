@@ -10,7 +10,8 @@
     <link rel="manifest" href="../Assets/favicon/site.webmanifest">
     <title>Sign Up page</title>
 </head>
-<body>
+<body style="display: flex; flex-direction: column; justify-content: space-between; 
+align-items: center; overflow-y: scroll;">
     <nav class="nav-bar">
         <img src="../Assets/logo.svg" class="logo">
         <div class="nav-items">
@@ -28,9 +29,11 @@
                 <input type="text" name="first-name" id="first-name" placeholder="First Name">
                 <input type="text" name="last-name" id="last-name" placeholder="Last Name">
             </div>
-            <input type="emil" name="email" id="email" placeholder="E-mail">
-            <input type="password" name="password" id="password" placeholder="Password">
-            <input type="number" name="number" id="number" placeholder="Phone Number (optional)">
+            <input type="email" name="email" id="email" placeholder="E-mail">
+            <div class="flex-two">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <input type="number" name="number" id="number" placeholder="Phone Number (optional)">
+            </div>
             <input type="checkbox" id="checkbox" name="checkbox">
             <label for="checkbox">I want to receive shop-7 Newsletters with the best deals and offers</label>
             <input type="submit" value="CREATE ACCOUNT" id="submit">

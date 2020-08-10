@@ -135,7 +135,7 @@ input, input:hover, button, button:hover {
     border-radius: 5px;
     background: transparent;
 }
-.login-container .login input[type="submit"] {
+.login-container .login input[type="submit"], .login-container .signup input[type="submit"] {
     width: 100%;
     margin: 3% 0 0 0;
     height: 40px;
@@ -144,6 +144,31 @@ input, input:hover, button, button:hover {
     border-radius: 5px;
     font-size: 18px;
     font-family: 'Montserrat bold', sans-serif;
+}
+.signup .name, .signup .flex-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.signup input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: 'Montserrat medium', sans-serif;
+}
+.signup .name input, .signup .flex-two input {
+    width: 46%;
+    padding: 10px;
+    background: transparent;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: 'Montserrat medium', sans-serif;
+
 }
 .login-container .login input[type="email"], .login input[type="password"] {
     width: 100%;
@@ -171,6 +196,7 @@ label {
 .login-container .account-extra {
     font-size: 14px;
     font-family: 'Montserrat medium', sans-serif;
+    text-align: center;
 }
 .login-container .flexy a, .login-container .account-extra a {
     display: block;

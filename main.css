@@ -33,6 +33,12 @@ input, input:hover, button, button:hover {
     src: url(fonts/Montserrat-Light.ttf);
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 .nav-bar {
     width: 100%;
     margin: 0;
@@ -51,7 +57,10 @@ input, input:hover, button, button:hover {
     width: 160px;
     height: auto;
 }
-.nav-bar .nav-items {
+.nav-bar .nav-items .menu {
+    display: none;
+}
+.nav-bar .nav-items .dropdown {
     display: inline-block;
     margin-right: 1%;
     display: flex;
@@ -61,21 +70,30 @@ input, input:hover, button, button:hover {
     font-size: 19px;
     font-family: 'Montserrat regular', sans-serif;
 }
-.nav-bar .nav-items span {
+.nav-bar .nav-items .dropdown span {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
+    margin-left: 20px;    
 }
-.nav-bar .nav-items a {
-    display: block;
+.nav-bar .nav-items .dropdown > a {
     margin-left: 20px;
+}
+.nav-bar .nav-items .dropdown a {
+    display: block;
     color: #2d3047;
     font-size: 18px;
     font-family: 'Montserrat regular', sans-serif;
 }
-.nav-bar .nav-items a:hover, .nav-items .active {
+.nav-bar .nav-items .dropdown a:hover, .nav-items .active {
     color: #181925;
     font-family: 'Montserrat bold', sans-serif;
     text-decoration: underline;
+}
+@media (max-width: 860px) and (min-width: 750px) {
+    .nav-bar .nav-items a {
+        margin-left: 12px;
+        font-size: 16px;
+    }
 }
 .hero {
     width: 100%;
@@ -121,6 +139,50 @@ input, input:hover, button, button:hover {
 .hero .hero-img {
     width: 60%;
     height: auto;
+}
+@media (max-width: 749px) {
+    .nav-bar .logo {
+        width: 130px;
+        height: auto;
+    }
+    .nav-bar .nav-items a {
+        margin-left: 12px;
+        font-size: 16px;
+    }
+    .nav-bar .nav-items .menu {
+        display: block;
+    }
+    .nav-bar .nav-items .dropdown  {
+        display: none;
+    }
+    .hero {
+        padding: 5% 6% 5% 6%;
+        flex-direction: column-reverse;
+        align-items: center;
+        color: rgba(0,0,0,0.75);
+        font-size: 16px;
+        font-family: 'Montserrat regular', sans-serif;
+        text-align: center;
+    }
+    .hero .hero-cnt {
+        width: 100%;
+        margin: 20px 0 0 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero .hero-cnt .title {
+        color: #09048b;
+        margin-bottom: 6%;
+        font-size: 47px;
+        font-family: 'Montserrat bold', sans-serif;
+        
+    }
+    .hero .hero-img {
+        width: 78%;
+        height: auto;
+    }
 }
 
 /* THE LOGIN AND SIGNUP PAGE STYLES */

@@ -52,7 +52,6 @@ input, input:hover, button, button:hover {
     height: auto;
 }
 .nav-bar .nav-items {
-    width: 40%;
     display: inline-block;
     margin-right: 1%;
     display: flex;
@@ -62,7 +61,13 @@ input, input:hover, button, button:hover {
     font-size: 19px;
     font-family: 'Montserrat regular', sans-serif;
 }
+.nav-bar .nav-items span {
+    display: flex;
+    flex-direction: row;    
+}
 .nav-bar .nav-items a {
+    display: block;
+    margin-left: 20px;
     color: #2d3047;
     font-size: 18px;
     font-family: 'Montserrat regular', sans-serif;

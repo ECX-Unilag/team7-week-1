@@ -12,8 +12,6 @@
     <style>
         body {
             background: #edd382;
-            display: flex;
-            flex-direction: column;
         }
         main {
             width: 100%;
@@ -39,12 +37,17 @@
     <nav class="nav-bar">
         <img src="../Assets/logo.svg" class="logo">
         <div class="nav-items">
-            <a href="../index.html">Home</a>
-            <a href="#" class="active">Countdown</a>
-            <a href="shop-page.html">Products</a>
-            <a href="#">Cart</a>
-            <span><a href="login.html">Login</a>/
-                <a href="signup.html">Signup</a></span>
+            <img src="../Assets/menu.svg" class="menu">
+            <div class="dropdown">
+                <a href="../index.html">Home</a>
+                <a href="#" class="active">Countdown</a>
+                <a href="shop-page.html">Products</a>
+                <a href="#">Cart</a>
+                <span>
+                    <a href="login.html">Login</a>/
+                    <a href="signup.html">Signup</a>
+                </span>
+            </div>
         </div>
     </nav>
     <main class="countdown-timer">

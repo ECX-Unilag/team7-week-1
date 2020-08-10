@@ -10,7 +10,8 @@
     <link rel="manifest" href="../Assets/favicon/site.webmanifest">
     <title>login page</title>
 </head>
-<body>
+<body style="display: flex; flex-direction: column; justify-content: space-between; 
+align-items: center; overflow-y: scroll;">
     <nav class="nav-bar">
         <img src="../Assets/logo.svg" class="logo">
         <div class="nav-items">
@@ -26,9 +27,13 @@
         <form class="login-form login">
             <input type="email" name="email" id="email" placeholder="E-mail">
             <input type="password" name="password" id="password" placeholder="Password">
-            <input type="checkbox" id="checkbox" name="checkbox">
-            <label for="checkbox">remember me</label>
-            <a href="#">forgot account</a>
+            <div class="flexy">
+                <div>
+                    <input type="checkbox" id="checkbox" name="checkbox">
+                    <label for="checkbox">remember me</label>
+                </div>
+                <a href="#">forgot account</a>
+            </div>
             <input type="submit" value="LOGIN" id="submit">
         </form>
         <div class="account-extra">

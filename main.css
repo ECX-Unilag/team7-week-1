@@ -11,9 +11,10 @@ html, body {
 a {
     text-decoration: none;
 }
-button, button:hover {
+input, input:hover, button, button:hover {
     outline: none;
     border: none;
+    cursor: pointer;
 }
 @font-face {
     font-family: Montserrat bold;
@@ -119,34 +120,68 @@ button, button:hover {
 
 /* THE LOGIN AND SIGNUP PAGE STYLES */
 .login-container {
-    width: 100%;
+    width: 70%;
     margin: 3% 0;
-    padding: 3% 0;
+    padding: 5% 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #e6bb89;
+    background: rgba(0,0,0,0.2);
+    border-radius: 5px;
 }
 .login-container .login-form {
-    width: 70%;
-    margin: 0;
-    padding: 2% 5%;
+    width: 100%;
     border-radius: 5px;
     background: transparent;
 }
 .login-container .login input[type="submit"] {
     width: 100%;
+    margin: 3% 0 0 0;
     height: 40px;
+    background: #1b79a1;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Montserrat bold', sans-serif;
 }
 .login-container .login input[type="email"], .login input[type="password"] {
     width: 100%;
+    outline: none;
     border: none;
     display: block;
     background: transparent;
     border-bottom: 1px solid black;
     padding: 10px;
     margin-bottom: 20px;
+    font-size: 16px;
+    font-family: 'Montserrat medium', sans-serif;
+}
+label {
+    font-size: 15px;
+    font-family: 'Montserrat medium', sans-serif;
+}
+.login-container .flexy {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-container .account-extra {
+    font-size: 14px;
+    font-family: 'Montserrat medium', sans-serif;
+}
+.login-container .flexy a, .login-container .account-extra a {
+    display: block;
+    font-size: 15px;
+    font-family: 'Montserrat bold', sans-serif;
+    color: rgb(64, 64, 212);
+}
+.login-container .login input[type="email"]:hover, .login input[type="password"]:hover {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
 }
 .login-container .login input[type="checkbox"] {
     display: inline-block;

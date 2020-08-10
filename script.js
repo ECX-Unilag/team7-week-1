@@ -28,8 +28,7 @@ var x = setInterval(function() {
 }, 1000);
 
 // SLIDE SHOW FOR THE PRODUCT PAGE
-let image = [ '../Assets/images/items.png', '../Assets/images/green.png', '../Assets/images/blue.png', 
-'../Assets/images/red.png', '../Assets/images/orange.png'];
+let image = [ '../Assets/images/items.png', '../Assets/images/green.png', '../Assets/images/blue.png', '../Assets/images/red.png', '../Assets/images/orange.png'];
 let prevBtn = document.querySelector('#prev');
 let nextBtn = document.querySelector('#next');
 let slideShow = document.querySelector('#slide');
@@ -39,30 +38,41 @@ slideShow.onmouseover = function() {
   cont = false;
 };
 nextBtn.onclick = function() {
-  console.log('working');
+  console.log('next-button working');
   cont = false;
-    currentIndex++;
+  currentIndex++;
+  console.log(currentIndex);
+  console.log(image.length);
+  var img_length = image.length - 1;
+  if (currentIndex > img_length) {
+    currentIndex = 0;
+    slideShow.src = image[0];
+  }
+  else {
     slideShow.src = image[currentIndex];
-    var img_length = image.length - 1;
     setInterval(
       function change() {
         cont = true;
-      }, 7000);
-    if (currentIndex > img_length) {currentIndex = 0}
+      }, 4000);
+  }
     return currentIndex;
 };
 prevBtn.onclick = function() {
-  console.log('working');
+  console.log('prev-button working');
   cont = false;
     currentIndex--;
-    slideShow.src = image[currentIndex];
     var img_length = image.length - 1;
-    setInterval(
-      function change() {
-        cont = true;
-      }, 7000);
-    if (currentIndex < 0) {currentIndex = img_length}
-    return currentIndex;
+    if (currentIndex < 0) {
+      currentIndex = img_length;
+      slideShow.src = image[img_length];
+    } else {
+      slideShow.src = image[currentIndex];
+      setInterval(
+        function change() {
+          cont = true;
+        }, 4000);
+      return currentIndex;
+    }
 };
 
 window.onload = (event) => {
@@ -72,7 +82,8 @@ window.onload = (event) => {
         console.log('i move');
         currentIndex++;
         slideShow.src = image[currentIndex];
-        img_length = image.length;
+        console.log(currentIndex);
+        img_length = image.length - 2;
         if (currentIndex > img_length) { currentIndex = -1 }
         return currentIndex;
       }

@@ -59,6 +59,7 @@ body {
 }
 .nav-bar .nav-items .menu {
     display: none;
+    cursor: pointer;
 }
 .nav-bar .nav-items .dropdown {
     display: inline-block;

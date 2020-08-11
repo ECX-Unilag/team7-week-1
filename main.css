@@ -378,6 +378,35 @@ label {
     font-size: 16px;
     font-family: 'Montserrat light', sans-serif;
 }
+.pane {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+.prize {
+    font-size: 27px;
+    font-family: 'Montserrat bold', sans-serif;
+}
+.shop-hr {
+    border: 1px solid rgb(134, 88, 88);
+    margin: 5% 0;
+}
+.available {
+    font-size: 17px;
+    font-family: 'Montserrat light', sans-serif;
+}
+.available em {
+    font-family: 'Montserrat medium', sans-serif;
+}
+.remark {
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'Montserrat medium', sans-serif;
+}
 @media (max-width: 700px) {
     .store-item {
         width: 90%;
@@ -406,48 +435,25 @@ label {
     .store-item .store-item-cnt {
         width: 100%;
         margin: 50px 0 0 0;
-        text-align: left;
         padding: 15px 20px;
     }
     .title {
-        margin: 5px 0;
-        font-size: 34px;
-        font-family: 'Montserrat bold', sans-serif;
+        margin: 7px 0;
+        font-size: 6vw;
     }
     .h6 {
-        margin: 0 0 5px 0;
-        font-size: 16px;
-        font-family: 'Montserrat light', sans-serif;
+        font-size: 3.8vw;
+    }
+    .prize {
+        font-size: 5.7vw;
+    }
+    .available {
+        font-size: 3.4vw;
+    }
+    .remark {
+        font-size: 3.7vw;
     }
 } 
-.pane {
-    width: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-}
-.prize {
-    font-size: 27px;
-    font-family: 'Montserrat bold', sans-serif;
-}
-.shop-hr {
-    border: 1px solid rgb(134, 88, 88);
-    margin: 5% 0;
-}
-.available {
-    font-size: 17px;
-    font-family: 'Montserrat light', sans-serif;
-}
-.available em {
-    font-family: 'Montserrat medium', sans-serif;
-}
-.remark {
-    font-size: 18px;
-    font-family: 'Montserrat medium', sans-serif;
-}
 .sizes, .color {
     width: 100%;
     margin: 8px 0;

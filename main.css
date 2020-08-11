@@ -85,7 +85,7 @@ body {
     font-size: 18px;
     font-family: 'Montserrat regular', sans-serif;
 }
-.nav-bar .nav-items .dropdown a:hover, .nav-items .active {
+.nav-bar .nav-items .dropdown a:hover, .nav-bar .nav-items a.active {
     color: #181925;
     font-family: 'Montserrat bold', sans-serif;
     text-decoration: underline;
@@ -553,19 +553,101 @@ header span {
 }
 .footer {
     width: 100%;
-    margin: 0;
+    position: relative;
+    margin: 5% 0 0 0;
     background: lightcoral;
-    padding: 4% 6% 3% 6%;
+    padding: 4% 6% 0 6%;
+    position: relative;
 }
 .footer .logo {
     width: 150px;
     height: auto;
 }
-.foot-row {
+footer .foot-rows {
     width: 100%;
-    margin: 0;
+    margin: 0 0 2.3% 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
+}
+.socials {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+}
+.socials img {
+    width: 30px;
+    height: 30px;
+    margin: 0 6px;
+    cursor: pointer;
+}
+footer hr {
+    margin-bottom: 1.5%;
+}
+.fot-flex {
+    width: 100%;
+    position: absolute;
+    padding: 2% 0 2% 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+.copyright {
+    position: absolute;
+    right: 6%;
+    font-size: 19px;
+    font-family: 'Montserrat medium', sans-serif;
+}
+.row-one {
+    width: 38.5%;
+    padding-right: 6%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.footer header {
+    font-family: 'Montserrat bold', sans-serif;
+    font-size: 18px;
+}
+.row-four div {
+    font-family: 'Montserrat medium', sans-serif;
+    font-size: 15px;
+}
+.conti div {
+    font-family: 'Montserrat regular', sans-serif;
+    margin: 5px 0;
+    font-size: 15px;
+}
+.con-two {
+    margin: 2.4% 0;
+}
+.row-two div, .row-three div {
+    font-family: 'Montserrat regular', sans-serif;
+    margin: 6px 0;
+    font-size: 15px;
+}
+.row-two, .row-three {
+    width: 20.5%;
+    padding-top: 4%;
+    text-align: left;
+}
+.row-four {
+    width: 20.5%;
+    padding-top: 6.4%;
+    text-align: left;
+}
+.back-to-top {
+    position: sticky;
+    border: 1px solid red;
+}
+.arrow-up {
+    width: 35px;
+    height: 35px;
+    transform: rotate(270deg);
 }

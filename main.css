@@ -551,3 +551,21 @@ header span {
 .bordered {
     border: 1px solid orange;
 }
+.footer {
+    width: 100%;
+    margin: 0;
+    background: lightcoral;
+    padding: 4% 6% 3% 6%;
+}
+.footer .logo {
+    width: 150px;
+    height: auto;
+}
+.foot-row {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

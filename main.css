@@ -383,8 +383,6 @@ label {
         width: 90%;
         margin: 3% 5%;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
     }
     .store-item .images {
         width: 100%;
@@ -397,13 +395,6 @@ label {
     .store-item .images .arrow {
         width: 55px;
         height: 55px;
-        z-index: 1000;
-        cursor: pointer;
-        opacity: 0.4;
-        transition: .8s;
-    }
-    .store-item .images .arrow:hover {
-        opacity: 1;
     }
     .store-item .images .others {
         height: 25vw;
@@ -411,7 +402,22 @@ label {
     .store-item .images .others img {
         width: 20%;
         height: 100%;
-        border: 1px solid rgba(0,0,0,0.3);
+    }
+    .store-item .store-item-cnt {
+        width: 100%;
+        margin: 50px 0 0 0;
+        text-align: left;
+        padding: 15px 20px;
+    }
+    .title {
+        margin: 5px 0;
+        font-size: 34px;
+        font-family: 'Montserrat bold', sans-serif;
+    }
+    .h6 {
+        margin: 0 0 5px 0;
+        font-size: 16px;
+        font-family: 'Montserrat light', sans-serif;
     }
 } 
 .pane {
